@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300');
+
+body {
+  background-size: cover;
+  font-family: 'Quicksand', sans-serif;
+
+     /* background-image: radial-gradient(white,yellow); */
+}
+
+
+
+h1{
+  text-align: center;
+  color: white;
+  z-index:
+}
+
+/* this is my header glow lights */
+.neon{
+  padding: 0 20px;
+  font-size: 6em;
+  color: #fff;
+  text-shadow: 0 0 20px #ff005b;
+}
+.neon:after{
+  content: after(data-text);
+  position: absolute;
+  padding: 0 20px;
+  z-index: -1;
+  color: #ff005b;
+  filter: blur(90px);
+
+}
+/* end of glowe ligths */
+
+
+/* hambergur menu */
+#menu-button {
+  color: black;
+  font-weight: bold;
+  font-size: 2em;
+	position: fixed;
+	padding: 5px 10px;
+	background-color: #FFF;
+	border-radius: 5px;
+	top: 15px;
+	left: 15px;
+	z-index: 999;
+	transition: 0.3s ease;
+}
+
+#menu-button.menu-open {
+	background-color: initial;
+	border: 3px solid #FFF;
+	color: #FFF;
+}
+
+.hidden {
+	display: none;
+}
+
+#menu {
+	position: fixed;
+	z-index: 998;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 40vw;
+	background-color: tomato;
+  -webkit-clip-path:polygon(0 0,100% 0,100% 100%,0% 100%)
+	transform-origin: left;
+	transition: 0.5s ease;
+}
+
+#menu ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+#menu ul li {
+	padding: 5px;
+	font-size: 5rem;
+}
+
+#menu ul li:hover {
+	text-decoration: underline;
+}
+
+#menu.menu-collapsed {
+	width: 0;
+}
+/* end of hambergur menu */
+
+.topheader{
+  background-color: none;
+}
+
+header{
+
+  background-color: blue;
+  color: white;
+  text-align: center;
+  height: 100px;
+  width: auto;
+
+}
+
+.container {
+    margin:10px auto;
+    position: relative;
+    display:flex;
+   flex-wrap:wrap;
+   justify-content:center;
+
+}
+.block {
+    background-image: radial-gradient(white,green);
+    height: 300px;
+    width: 500px;
+    text-align: center;
+    display:inline-block;
+    /* margin: 10px; */
+}
+
+.block2 {
+    background: blue;
+    height: 300px;
+    width: 610px;
+    text-align: center;
+  display:inline-block;
+    /* margin: 10px; */
+}
+.block3 {
+    background: red;
+    height: 220px;
+    width: 460px;
+    text-align: center;
+    display:inline-block;
+    /* margin: 10px; */
+}
+
+.block4 {
+    background: black;
+    height: 220px;
+    width: 245px;
+    text-align: center;
+    display:inline-block;
+    /* margin: 10px; */
+}
+
+.block5 {
+    background: pink;
+    height: 220px;
+    width: 405px;
+    text-align: center;
+    display:inline-block;
+    /* margin: 10px; */
+}
+
+.block6 {
+    /* background-image: radial-gradient(white,purple); */
+    height: 198px;
+    width: 641px;
+    text-align: center;
+    display:inline-block;
+    /* margin: 10px; */
+}
+
+.block7 {
+    background: white;
+    height: 198px;
+    width: 469px;
+    text-align: center;
+    display:inline-block;
+    /* margin: 10px; */
+}
+
+.block8 {
+    background: green;
+    height: 147px;
+    width: 1110px;
+    text-align: center;
+    display:inline-block;
+    /* margin: 10px; */
+}
+
+
+/* my mouse trail effect */
+.trail { /* className for the trail elements */
+    position: absolute;
+    height: 6px; width: 6px;
+    border-radius: 3px;
+    background: teal;
+  }
+  /* end of mouse trail effect */
+
+
+
+
+/* this is my text shadow blur  */
+
+#blur-dropshadow { color: rgba(0,0,0,0); margin: 10px; text-shadow: 0px 0px 6px #000, 0px 0px 3px #000;
+  -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+#blur-dropshadow:hover { color: red; text-shadow: none; }
+
+.lt-ie10 #blur-dropshadow {
+    /* for IE7 */
+    zoom: 1;
+    color: #000;
+    /* Implement the blur */
+    filter: progid:DXImageTransform.Microsoft.Chroma(Color=#222222)
+            progid:DXImageTransform.Microsoft.Blur(Strength=2);
+    position: relative;
+    top: -2px;
+    left: -2px;
+   }
+
+.lt-ie10 #blur-dropshadow:hover {
+    filter: none;
+    top: 0;
+    left: 0
+}
+
+/* end of text shadow blur  */
+/* h1{
+  border: 0;
+    border-bottom: 1px solid #ccc;
+  color: gold;
+} */
+
+h3{
+  font-size: 1em;
+}
+
+ul {
+  list-style-type: none;
+}
+.footer {
+  height: 230px;
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+  background-color: #2C3E50;
+  color: #fff;
+}
+#wrap .left h1{
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  color: gold;
+}
+#wrap .midd h1{
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  color: gold;
+}
+#wrap .right h1{
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  color: gold;
+}
+
+#wrap{
+  width:95%;
+}
+
+ol, ul{
+  margin-top: -33px;
+}
+
+.left{
+  margin-left: 2%;
+  color: white;
+  width: 240px;
+  height: 123px;
+  /* background-color: white; */
+  float: left;
+}
+.right {
+  color: white;
+  width: 240px;
+  height: 123px;
+  /* background-color: white; */
+  float: right;
+
+}
+.midd {
+  color: white;
+  width: 240px;
+  height: 123px;
+  /* background-color: white; */
+  float: left;
+  margin-left: 25%;
+
+
+}
+
+
+/* footer{
+  font-size: 3em;
+  background-color: blue;
+  text-align: center;
+  height: 145px;
+  width: auto;
+  color: white;
+} */
+
+`````````````````````````````````````````````
+
+
+
+
+
+
+/* my nav link turns it white not blue */
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover
+{
+     color:white;
+     text-decoration:none;
+     cursor:pointer;
+}
+
+
+nav-link{
+  color: white;
+}
+
+/* bottm half of my page */
+
+.ib-container{
+	position: relative;
+	width: 800px;
+	margin: 30px auto;
+	display: block;
+}
+
+.ib-container article{
+
+}
+.ib-container h3 a{
+	font-size: 30px;
+	font-weight: 400;
+	color: #000;
+	color: rgba(0, 0, 0, 1);
+	text-shadow: 0px 0px 0px rgba(0, 0, 0, 1);
+	opacity: 0.8;
+}
+.ib-container article header span{
+	font-size: 20px;
+	font-family: "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif;
+	padding: 10px 0;
+	display: block;
+	color: #FFD252;
+	color: rgba(255, 210, 82, 1);
+	text-shadow: 0px 0px 0px rgba(255, 210, 82, 1);
+	text-transform: uppercase;
+	opacity: 0.8;
+}
+.ib-container article p{
+  margin: 10px 5px 10px;
+	font-family: Verdana, sans-serif;
+	font-size: 20px;
+	line-height: 13px;
+	color: white;
+	/* color: rgba(51, 51, 51, 1); */
+	text-shadow: 0px 0px 0px rgba(51, 51, 51, 1);
+	opacity: 0.8;
+}
+
+/* Hover Style for all the items: blur, scale down*/
+ .ib-container article.blur{
+	box-shadow: 0px 0px 20px 10px yellow;      /* color of shadow when hoverd over   */
+	-webkit-transform: scale(0.9);
+	-moz-transform: scale(0.9);
+	-o-transform: scale(0.9);
+	-ms-transform: scale(0.9);
+	transform: scale(0.9);
+	opacity: 0.7;
+}
+.ib-container article.blur h3 a{
+	text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9);
+	color: rgba(0, 0, 0, 0);
+	opacity: 0.5;
+}
+.ib-container article.blur header span{
+	text-shadow: 0px 0px 10px rgba(255, 210, 82, 0.9);
+	color: rgba(255, 210, 82, 0);
+	opacity: 0.5;
+}
+.ib-container article.blur  p{
+	text-shadow: 0px 0px 10px rgba(51, 51, 51, 0.9);
+	color: rgba(51, 51, 51, 0);
+	opacity: 0.5;
+}
+
+/* Hover Style for single item: scale up */
+.ib-container article.active{
+	-webkit-transform: scale(1.05);
+	-moz-transform: scale(1.05);
+	-o-transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	transform: scale(1.05);
+	box-shadow:
+		0px 0px 0px 10px rgba(255,255,255,1),   /* this is my border for when i hover over    */
+		1px 11px 15px 25px rgba(0,0,0,0.4);     /*  this is my dubble shadow outline   */
+	z-index: 100;
+	opacity: 1;
+}
